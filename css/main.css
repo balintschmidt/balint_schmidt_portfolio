@@ -1,0 +1,85 @@
+body{
+	font-family: 'Texturina',serif;
+	background-color: #FFE4C4;
+	font-size: 20px;
+	margin: 20px;
+
+	display: grid;
+	grid-template-areas: 
+			"fejlec"
+			"tartalom"
+			"lablec"
+			;
+			grid-template-rows: max-content 1fr max-content;
+			min-height: 100vh;
+}
+
+header{
+
+	line-height: 0.5vw;
+	grid-area: fejlec;
+	border:5px solid grey;
+	background-color: white;
+	padding: 2vw;
+	border-radius: 5vw;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "menu ismerteto hobbi how";
+	grid-gap: 2rem;
+
+}
+
+main{
+
+	grid-area: tartalom;
+	text-align:center;
+	margin: 20px;
+}
+
+footer{
+
+	grid-area: lablec;
+	text-align: center;
+	max-height: max-content;
+}
+
+
+.menusav{
+	margin: 10px;
+	display: initial;
+}
+.menu{
+	margin: 3%;
+	display: initial;
+	font-size: 3vw;
+	text-decoration: none;
+	color: #000000;
+	user-select: none;
+}
+.menu:hover{
+	text-shadow: 2px 2px 6px rgba(0,0,0,0.6)
+}
+
+.linkek{
+		margin: 3px;
+		color: #000000;
+}
+
+.udv{
+	font-size: 3vw;
+}
+
+.menu1{
+	grid-area: menu;
+}
+
+.menu2{
+	grid-area: ismerteto;
+}
+.menu3{
+	grid-area: hobbi;
+}
+.menu4{
+	grid-area: how;
+}
